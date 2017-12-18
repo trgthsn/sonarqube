@@ -28,6 +28,12 @@ public class UserController {
     
     @RequestMapping(value = "/getalluser", method = RequestMethod.GET)
     public @ResponseBody List<User> getAllUser(){
+		
+		String firstName = getFirstName();   //String is a good example of a class overriding the equals method
+String lastName = getLastName();
+
+if (firstName == lastName) { return null; };   // Non-compliant, the two literals can hav
+		
         return userService.getAllUser();
     }
     
