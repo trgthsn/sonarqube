@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated May 5, 2015 4:48:37 PM by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="com.aries.blog.model.User" table="user" catalog="bohayblog">
+        <id name="username" type="string">
+            <column name="username" length="50" />
+            <generator class="assigned" />
+        </id>
+        <property name="name" type="string">
+            <column name="name" length="50" not-null="true" />
+        </property>
+        <property name="password" type="string">
+            <column name="password" length="250" not-null="true" />
+        </property>
+        <property name="enable" type="boolean">
+            <column name="enable" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
