@@ -14,7 +14,7 @@ public class User  implements java.io.Serializable {
      private String name;
      private String password;
      private boolean enable;
-     private String tatatatatatatattata;
+     private String tatatatatatatattatjja;
 
     public User() {
     }
