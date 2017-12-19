@@ -1,3 +1,4 @@
+
 package com.aries.blog.model;
 // Generated May 5, 2015 4:48:35 PM by Hibernate Tools 3.6.0
 
@@ -13,6 +14,7 @@ public class User  implements java.io.Serializable {
      private String name;
      private String password;
      private boolean enable;
+     private String tatatatatatatattata;
 
     public User() {
     }
