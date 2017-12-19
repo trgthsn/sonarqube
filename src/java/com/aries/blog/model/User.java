@@ -52,6 +52,9 @@ public class User  implements java.io.Serializable {
     public void setEnable(boolean enable) {
         this.enable = enable;
     }
+     public void display(int i){
+  System.out.println("Output is " + String.valueOf(i));    // Noncompliant
+}
 
 
 
