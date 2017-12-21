@@ -1,3 +1,4 @@
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -23,18 +24,13 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class UserController {
     
-    @Autowired
-    private UserService userService;
-    
-    @RequestMapping(value = "/getalluser", method = RequestMethod.GET)
-    public @ResponseBody List<User> getAllUser(){
-		
-		String firstName = getFirstName();   //String is a good example of a class overriding the equals method
-String lastName = getLastName();
-
-if (firstName == lastName) { return null; };   // Non-compliant, the two literals can hav
-		
-        return userService.getAllUser();
-    }
+  int a=0;
+  int b=1;
+	if(a==0)
+	{
+		return b;
+	}
+	
+	return b;
     
 }
